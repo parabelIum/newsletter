@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(./newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(./newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: hsl(234, 29%, 20%);
+    overflow-x: hidden;
+}
+
+* {
+    font-family: Roboto-Regular;
+}
+
+img {
+    width: 100vw;
+}
+
+.newsletter-text {
+    font-size: 4vw;
+    margin: 8%;
+}
+
+header {
+    font-family: Roboto-Bold;
+    font-size: 3rem;
+    color: hsl(235, 18%, 26%)
+}
+
+li {
+    list-style-image: url(./newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
+    padding: 7px;
+}
+
+.email-field h3 {
+    font-size: 0.8rem;
+}
+
+.email-field .error {
+    color: hsl(4, 100%, 67%);
+    visibility: hidden;
+}
+
+.email-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 15px 0px 15px 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: hsl(231, 7%, 60%);
+    border: 1px solid hsl(231, 7%, 60%);
+    font-size: 1.1rem;
+}
+
+button {
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232742;
+    color: white;
+    flex-grow: 1;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #FF5572, #FF683D);
+    background-size: 0% 100%;
+    transition: background-size 1s ease;
+
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 11px 16px 38px -10px #FF5E5B;
+    border: 1px solid transparent;
+    background-size: 100% 100%;
+    animation-name: fadeIn;
+    animation-duration: 1.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        background-size: 0% 100%;
+        opacity: 0.1;
+    }
+
+    to {
+        background-size: 100% 100%;
+        opacity: 1;
+    }
+}
+
+.popup-container {
+    display: none;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+}
+
+.popup-text {
+    margin: 200px 30px 0 30px;
+    background-color: white;
+    width: 100%;
+}
+
+.popup-text h1 {
+    font-family: Roboto-Bold;
+    font-size: 3rem;
+}
+
+.success-icon {
+    width: 20%;
+}
+
+.email-sent {
+    font-family: Roboto-Bold;;
+}
+
+
+.dismiss-button {
+    display: flex;
+    flex-grow: 1;
+    bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.dismiss {
+    margin: 30px;
+}
+
+#show {
+    display: flex;
+}
+
+@media (min-width: 576px)  {
+    body {
+        background-color: #36384D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .thumbnail {
+        flex-grow: 1;
+        align-self: stretch;
+        display: flex;
+        width: 50%;
+    }
+
+    .thumbnail .image {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+    .newsletter-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        margin: 75px 60px;
+        width: 50%;
+        justify-content: center;
+    }
+
+    header {
+        font-size: 3.5rem;
+    }
+
+    .newsletter-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 1000px;
+        height: 650px;
+        background-color: #fff;
+        border-radius: 30px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    li {
+        padding: 3px;
+    }
+    
+    ul {
+        margin: 0px;
+    }
+
+    .email-container {
+        margin-top: 30px;
+    }
+
+    .popup-container {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #36384D;
+        position: absolute;
+    }
+
+    .popup-text {
+        width: 400px;
+        border-radius: 30px;
+        margin-top: 100px;
+        padding: 50px;
+    }
+
+    .dismiss-button {
+        display: flex;
+        flex-grow: 1;
+        position: relative;
+        right: 0;
+        left: 0;
+        align-items: center;
+        margin: 50px 0 10px 0;
+        padding: 0;
+    }
+
+    .dismiss {
+        margin: 0;
+    }
+}

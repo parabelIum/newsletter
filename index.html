@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <link rel="icon" type="image/png" href="./newsletter-sign-up-with-success-message-main/assets/images/favicon-32x32.png">
+    <title>Sign up for newsletter</title>
+</head>
+<body>
+    <div class="newsletter-container">
+        <div class="thumbnail">
+            <img class="image" src="./newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg" alt="sign up image">
+        </div>
+            <div class="newsletter-text">
+            <header>Stay updated!</header>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+                <li>Product discovery and building what matters</li>
+                <li>Measuring to ensure updates are a success</li>
+                <li>And much more!</li>
+            </ul>
+            <div class="email-container">
+                <div class="email-field">
+                    <h3>Email address</h3>
+                    <h3 class="error">Valid Email required</h3>
+                </div>
+                <input class="email-input" type="text" placeholder="email@company.com">
+            </div>
+            <button onclick="checkEmail()">Subscribe to monthly newsletter</button>
+        </div>
+    </div>
+    <div class="popup-container">
+        <div class="popup-text">
+            <img class="success-icon" src="./newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg" alt="success">
+            <h1>Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <span class="email-sent"></span>. Please open it and click the button inside to confirm your subscription.</p>
+            <div class="dismiss-button">
+                <button onclick="closewindow()" class="dismiss">Dismiss message</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
