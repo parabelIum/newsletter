@@ -47,7 +47,7 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
-I've learned a lot about flexbox and its properties, such as align-self, flex-grow. Now I feel like I have a deeper understanding of the position property, because I had to make the success page overlay the main one. Also this is the project in which I've touched transitions, i had to use them to make the button chenge animations when hovered over it.
+I've learned a lot about flexbox and its properties, such as align-self, flex-grow. Now I feel like I have a deeper understanding of the position property, because I had to make the success page overlay the main one. Also this is the project in which I've touched a bit of transitions, because I had to use them to make the button change animations when the mouse hovered over it.
 
 ## Author
 
